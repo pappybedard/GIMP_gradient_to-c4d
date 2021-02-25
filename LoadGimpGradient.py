@@ -95,9 +95,9 @@ def main():
 
     #create a new base container for the gradient UserData
     bc = c4d.GetCustomDataTypeDefault(c4d.CUSTOMDATATYPE_GRADIENT)
-    #change these properies to True to allow editing alpha
     bc[c4d.DESC_NAME] = name
     #for R20+ only
+    #change these properies to True to allow editing alpha
     bc[c4d.GRADIENTPROPERTY_ALPHA_WITH_COLOR] = True
     bc[c4d.GRADIENTPROPERTY_ALPHA] = True
 
